@@ -1,0 +1,14 @@
+A SQL query with multiple joins used to aggregate the total revenue and amount of customers in the top 10 countries.
+
+SELECT A.country,
+       SUM (F.amount) AS total_spent,
+       COUNT (F.customer_id) AS customer_count
+FROM country A
+INNER JOIN city B ON A.country_id = B.country_id
+INNER JOIN address C ON B.city_id = C.city_id
+INNER JOIN customer D ON C.address_id = D.address_id
+INNER JOIN rental E ON D.customer_id = E.customer_id
+INNER JOIN payment F ON E.rental_id = F.rental_id
+GROUP BY A.country
+ORDER BY total_spent DESC
+LIMIT 10;
