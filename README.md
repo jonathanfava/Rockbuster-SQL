@@ -5,6 +5,6 @@
 #### Data
 ##### Rockbuster's relational database comprises 17 tables containing data on their film inventory, customers, payments and more. 
 #### Resources
-##### The data set can be found here.
+##### The data set can be found [here](http://www.postgresqltutorial.com/wp-content/uploads/2019/05/dvdrental.zip).
 ##### The data dictionary can be found here.
-##### Tableau visualizations can be found here.
+##### Tableau visualizations can be found [here](https://public.tableau.com/views/RockbusterAnalysis_16579321157190/Map?:language=en-US&:display_count=n&:origin=viz_share_link).
